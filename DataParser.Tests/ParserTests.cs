@@ -54,7 +54,6 @@ namespace DataParser.Tests
         }
 
         [TestMethod]
-        [ExpectedException(typeof(HttpRequestException), "A HttpRequestException was thrown. Host is possibly offline.")]
         public async Task TestInvalidParserREST()
         {
             using (HttpClient Client = new HttpClient())
@@ -72,6 +71,7 @@ namespace DataParser.Tests
         }
 
         [TestMethod]
+        [ExpectedException(typeof(HttpRequestException), "A HttpRequestException was thrown. Host is possibly offline.")]
         public async Task TestValidParserREST()
         {
             using (HttpClient Client = new HttpClient())
