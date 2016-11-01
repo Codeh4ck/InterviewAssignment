@@ -182,3 +182,5 @@ If you forked this project and wish to run it on your own environment, make sure
 1. Open your **Parser** properties (Project -> DataParser Properties) and copy the Project URL. Then set the URL in the [DataConnector](DataConnector/BaseComponents/DataConnector.cs) class, in the **APIUrl** property (it can be overriden as well in each connector).
 
 2. Open your **Storage** properties (Project -> DataStorage Properties) and copy the Project URL. Then set the URL in the [Web.config](DataParser/Web.config) file of the Parser, in the <appSettings> XML node (in the **StorageUrl** element).
+
+3. Edit the connection string of the database in the [Web.config](DataStorage/Web.config) of the **Storage** handler. The connection string is in the **connectionStrings** node, in the **DatabaseContext** element. It is not recommended to edit the **name** attribute of the connection string. To get a connection string, create a new database in your SQL Management Studio, connect to it from Visual Studio and right click it -> Properties. You will then find it in the properties window.
