@@ -10,7 +10,7 @@ using DataConnector.HTTP;
 
 namespace DataConnector.Connectors
 {
-    internal sealed class TwitterConnector : BaseComponents.DataConnector
+    public sealed class TwitterConnector : BaseComponents.DataConnector
     {
         private string ConsumerKey { get; }
         private string ConsumerSecret { get; }
@@ -58,6 +58,9 @@ namespace DataConnector.Connectors
                 Serialzier.Deserialize<dynamic>(await ResponseMessage.Content.ReadAsStringAsync())["statuses"];
 
             int DataLength = DeserializedObjects.Length;
+
+            if (DataLength == 0)
+                return 0;
 
             // I am casting the start index to a long here because Visual Studio is complaining that it can't tell whether I want the 
             // Parallel.For(long, long, ...) overload or the Parallel.For(int, int, ...)

@@ -9,5 +9,10 @@ namespace DataStorage.Database
             base("DatabaseContext") { }
 
         public DbSet<NewsDataModel> NewsData { get; set; }
+
+        public static DatabaseContext Create()
+        {
+            return new DatabaseContext();
+        }
     }
 }

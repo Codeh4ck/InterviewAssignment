@@ -4,7 +4,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace DataConnector.BaseComponents
-{    
+{
     public abstract class DataConnector : IDisposable, IDataConnector
     {
         public string ProviderName { get; protected set; }

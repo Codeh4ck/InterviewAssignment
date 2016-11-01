@@ -3,7 +3,7 @@ using DataConnector.Connectors;
 
 namespace DataConnector.BaseComponents
 {
-    class DataConnectorFactory
+    public class DataConnectorFactory
     {
         public static DataConnector CreateDataConnector(string providerName)
         {

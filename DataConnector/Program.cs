@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
 using DataConnector.BaseComponents;
-using DataConnector.Connectors;
 
 namespace DataConnector
 {
@@ -33,7 +32,6 @@ namespace DataConnector
             int DataCount = GetResult.Result;
 
             Console.WriteLine($"Number of Tweets received: {DataCount}.");
-
             Console.ReadKey();
         }        
     }

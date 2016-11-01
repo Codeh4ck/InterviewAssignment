@@ -11,7 +11,7 @@ namespace DataStorage.Controllers
 {
     public class NewsController : ApiController
     {  
-        private readonly DatabaseContext db = new DatabaseContext();
+        private readonly DatabaseContext db = DatabaseContext.Create();
 
         // GET api/News  
         public JsonResult<NewsDataModel[]> Get()
