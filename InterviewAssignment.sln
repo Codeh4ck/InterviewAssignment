@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataConnector", "DataConnector\DataConnector.csproj", "{56F83631-0500-450D-8158-62D49EBF6235}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStorage", "DataStorage\DataStorage.csproj", "{4FD384BA-7342-4B42-813D-24918D179A09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataParser", "DataParser\DataParser.csproj", "{94205C5F-16D4-4D72-8AB9-2DE73120E049}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56F83631-0500-450D-8158-62D49EBF6235}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56F83631-0500-450D-8158-62D49EBF6235}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56F83631-0500-450D-8158-62D49EBF6235}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56F83631-0500-450D-8158-62D49EBF6235}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FD384BA-7342-4B42-813D-24918D179A09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FD384BA-7342-4B42-813D-24918D179A09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FD384BA-7342-4B42-813D-24918D179A09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FD384BA-7342-4B42-813D-24918D179A09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94205C5F-16D4-4D72-8AB9-2DE73120E049}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94205C5F-16D4-4D72-8AB9-2DE73120E049}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94205C5F-16D4-4D72-8AB9-2DE73120E049}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94205C5F-16D4-4D72-8AB9-2DE73120E049}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
