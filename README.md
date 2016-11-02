@@ -1,5 +1,5 @@
-# InterviewAssignment
-A project provided as a solution to an interview assignment. 
+# Interview Assignment
+A project provided as a solution to an interview assignment. The main purpose of this software is to extract data from various sources, parse it and then store it into a database.
 
 # Description & Overview
 The project is layered in 3 modules, the **connector**, the **parser** and the **storage handler**. Each module is responsible for fullfilling the following tasks:
